@@ -10,8 +10,9 @@ export const Section = styled.section`
 
   .knightzWrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-top: 50px;
+    max-width: 1200px;
   }
 `

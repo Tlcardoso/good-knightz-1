@@ -5,7 +5,6 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 300px;
 
   img {
     margin-bottom: 40px;
@@ -28,5 +27,6 @@ export const Container = styled.div`
     font-size: 18px;
     color: var(--white);
     opacity: 0.75;
+    width: 270px;
   }
 `
