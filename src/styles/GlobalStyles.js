@@ -13,6 +13,7 @@ export default createGlobalStyle`
 
     --pink: #FFADDD;
     --blue: #82B2FB;
+    --purple: #2F1F46;
   }
   * {
     margin: 0;
