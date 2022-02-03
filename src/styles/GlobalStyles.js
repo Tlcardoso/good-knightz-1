@@ -12,6 +12,7 @@ export default createGlobalStyle`
     --shadow: #808080;
 
     --pink: #FFADDD;
+    --pink-dark: #FF99BE;
     --blue: #82B2FB;
     --purple: #2F1F46;
   }

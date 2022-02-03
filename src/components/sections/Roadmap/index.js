@@ -1,6 +1,6 @@
 import { Title } from "../../Title/styles"
 import { Text } from "../../Text/styles"
-import RoadmapCard from '../../RoadmapCard'
+import RoadmapCard from '../../cards/RoadmapCard'
 import { Section } from "./styles"
 
 const RoadmapSection = () => {

@@ -31,5 +31,6 @@ export const Section = styled.section`
     font-size: inherit;
     cursor: pointer;
     line-height: inherit;
+    box-shadow: 0px 10px 13px 0px rgba(0,0,0,0.1);
   }
 `
