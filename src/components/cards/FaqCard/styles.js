@@ -9,9 +9,7 @@ export const Container = styled.div`
   font-weight: 500;
   border-radius: 12px;
   position: relative;
-
-  .question {
-  }
+  transition: all 0.3s ease; 
 
   .answer {
     opacity: 0.75;

@@ -13,6 +13,21 @@ const FaqSection = () => {
           question="How many NFTs are available for minting?"
           answer="In total xxxx NFTs."
         />
+
+        <FaqCard
+          question="How many can I mint?"
+          answer="In total xxxx NFTs."
+        />
+
+        <FaqCard
+          question="How to buy/mint?"
+          answer="In total xxxx NFTs."
+        />
+
+        <FaqCard
+          question="How to view NFTs in your wallet?"
+          answer="In total xxxx NFTs."
+        />
       </div>
     </Section>
   )
