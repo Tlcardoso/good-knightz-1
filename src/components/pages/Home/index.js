@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <Container>
       <Header />
-
+      
       <HomeSection />
       <StorySection />
       <RoadmapSection />
