@@ -6,6 +6,7 @@ import MeetSection from "../../sections/Meet";
 import PartnerSection from "../../sections/Partner";
 import { Container } from './styles'
 import FaqSection from "../../sections/FAQ";
+import Footer from "../../Footer";
 
 const Home = () => {
 
@@ -19,6 +20,8 @@ const Home = () => {
       <MeetSection />
       <PartnerSection />
       <FaqSection />
+
+      <Footer />
     </Container>
   )
 }

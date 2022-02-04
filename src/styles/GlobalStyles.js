@@ -2,15 +2,16 @@ import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
   :root {
-    --black: #212121;
-    --white: #FFF;
-    --gray: #EEE;
     --text-black: #151812;
     --text-white: #EEE;
     --primary: orange;
     --secondary: #F80;
     --shadow: #808080;
-
+    
+    --gray: #404040;
+    --black: #212121;
+    --black-void: #020202;
+    --white: #FFF;
     --pink: #FFADDD;
     --pink-dark: #FF99BE;
     --blue: #82B2FB;
