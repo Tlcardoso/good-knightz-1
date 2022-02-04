@@ -8,11 +8,10 @@ export const Container = styled.div`
   background: linear-gradient(
     180deg,
     #B9EBF6 0%,
-    #FFF8EC 6.15%,
-    #EA90A0 11.67%,
-    #69529A 25.83%,
-    #7978B1 50%,
-    #392A51 75%,
+    #FFF8EC 10.15%,
+    #EA90A0 15.67%,
+    #69529A 32.83%,
+    #392A51 66%,
     #1B1623 100%
   );
 `
