@@ -15,7 +15,7 @@ export const Container = styled.div`
 
     span {
       margin-right: 13px;
-      color: ${props => props.pinkDetail ? "var(--pink)" : "var(--white)"};
+      color: ${props => props.pinkDetail ? "var(--pink)" : "var(--green)"};
     }
   }
 
