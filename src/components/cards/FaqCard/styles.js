@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 100%;
+  width: 1170px;
   padding: 35px 30px;
   color: var(--white);
   background: var(--purple-light);
@@ -16,31 +16,31 @@ export const Container = styled.div`
   }
 
   .toggle {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     background: var(--green);
     position: absolute;
-    top: 20px;
+    top: 30px;
     right: 20px;
 
     .vertical {
-      width: 5px;
-      height: 40px;
+      width: 4px;
+      height: 35px;
       border-radius: 12px;
       background: var(--black);
       position: absolute;
       top: 5px;
-      left: 23px;
+      left: 21px;
     }
 
     .horizontal {
-      width: 40px;
-      height: 5px;
+      width: 35px;
+      height: 4px;
       border-radius: 12px;
       background: var(--black);
       position: absolute;
-      top: 23px;
+      top: 21px;
       left: 5px;
     }
   }
