@@ -22,12 +22,14 @@ const Home = () => {
         <StorySection />
       </div>
       
-      <RoadmapSection />
-      <MeetSection />
-      <PartnerSection />
-      <FaqSection />
+      <div className="nonScenary">
+        <RoadmapSection />
+        <MeetSection />
+        <PartnerSection />
+        <FaqSection />
+        <Footer />
+      </div>
 
-      <Footer />
     </Container>
     </>
   )

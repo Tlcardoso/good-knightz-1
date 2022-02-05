@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
-  position: sticky;
+  position: fixed;
   top: 0;
   overflow: hidden;
 
@@ -65,7 +65,7 @@ export const Container = styled.div`
   .fieldWrapper {
     div {
       position: absolute;
-      bottom: -65px;
+      bottom: -60px;
       z-index: 2;
     }
 

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Section = styled.section`
-  margin: 50px auto;
+  margin: 100px auto;
   max-width: 670px;
 
   h1 {
