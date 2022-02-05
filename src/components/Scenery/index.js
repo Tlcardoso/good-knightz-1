@@ -36,7 +36,7 @@ const Scenery = () => {
       </div>
 
       <div className="fieldWrapper">
-        <LeftFieldSVG />
+        <LeftFieldSVG scale={0.5}/>
         <MainFieldSVG />
       </div>
 
