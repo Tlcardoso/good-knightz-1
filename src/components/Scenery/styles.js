@@ -26,7 +26,6 @@ export const Container = styled.div`
     div:nth-child(3) {
       right: 0;
     }
-
   }
 
   .bushWrapper {
@@ -80,5 +79,11 @@ export const Container = styled.div`
     bottom: 0;
     right: 50px;
     z-index: 1;
+  }
+
+  @media (max-width: 768px) {
+    svg {
+      display: none;
+    }
   }
 `;

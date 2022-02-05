@@ -15,6 +15,10 @@ export const Container = styled.div`
     justify-content: space-around;
     align-items: center;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 export const Nav = styled.nav`
@@ -41,6 +45,10 @@ export const IconWrapper = styled.div`
 
   div + div {
     margin-left: 10px;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
   }
 `
 

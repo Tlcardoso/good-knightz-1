@@ -17,4 +17,10 @@ export const Section = styled.section`
       margin: 40px auto;
     }
   }
+
+  @media (max-width: 768px) {
+    .topInfoWrapper{
+      padding: 15px;
+    }
+  }
 `

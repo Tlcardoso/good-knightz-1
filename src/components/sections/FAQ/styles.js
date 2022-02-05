@@ -7,10 +7,10 @@ export const Section = styled.div`
   align-items: center;
   justify-content: center;
 
-.faqCardsWrapper {
-
-  > div {
-    margin: 20px 0;
+  .faqCardsWrapper {
+    > div {
+      margin: 20px auto;
+    }
   }
 }
 `

@@ -5,4 +5,8 @@ export const Title = styled.h1`
   line-height: 65px;
   color: var(--white);
   letter-spacing: -2px;
+
+  @media (max-width: 768px) {
+    font-size: 36px;
+  }
 `

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 1170px;
+  width: min(1170px, 90vw);
   padding: 35px 30px;
   color: var(--white);
   background: var(--purple-light);
@@ -9,10 +9,10 @@ export const Container = styled.div`
   font-weight: 500;
   border-radius: 12px;
   position: relative;
-  transition: all 0.3s ease; 
 
   .answer {
     opacity: 0.75;
+    transition: all 0.3s ease;
   }
 
   .toggle {
@@ -23,6 +23,8 @@ export const Container = styled.div`
     position: absolute;
     top: 30px;
     right: 20px;
+    transition: all 0.3s ease;
+    transform: rotate(${props => props.isOpen ? '135deg' : '0deg'});
 
     .vertical {
       width: 4px;

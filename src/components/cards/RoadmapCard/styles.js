@@ -6,7 +6,7 @@ export const Container = styled.div`
   color: var(--white);
   background: var(--purple);
   border-radius: 12px;
-  width: 870px;
+  width: min(870px, 90%);
 
   h2 {
     font-size: 24px;
@@ -57,5 +57,13 @@ export const Container = styled.div`
     width: 2px;
     height: 340px;
     background: var(--white);
+  }
+
+  @media (max-width: 768px) {
+    padding: 15px;
+
+    .verticalElements {
+      display: none;
+    }
   }
 `

@@ -9,7 +9,7 @@ const FaqCard = ({ question, answer }) => {
   }
 
   return (
-    <Container>
+    <Container isOpen={showAnswer}>
       <div className="toggle" onClick={() => toggleAnswer()}>
         <div className="vertical"/>
         <div className="horizontal"/>

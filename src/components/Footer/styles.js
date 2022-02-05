@@ -65,4 +65,15 @@ export const Container = styled.footer`
       }
     }
   }
+
+  @media (max-width: 768px) {
+    .joinWrapper {
+      display: flex;
+      flex-direction: column;
+
+      button {
+        margin-top: 20px;
+      }
+    }
+  }
 `

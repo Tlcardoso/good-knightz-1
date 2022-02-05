@@ -6,5 +6,13 @@ export const Section = styled.section`
   margin: 200px auto;
   display: flex;
   align-items: center;
-  justify-content: space-around;  
+  justify-content: space-around; 
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    img {
+      margin-top: 20px;
+    }
+  }
 `
