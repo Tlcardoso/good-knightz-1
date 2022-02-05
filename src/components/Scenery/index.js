@@ -1,6 +1,5 @@
 import CastleSVG from "../SVGs/Scenery/CastleSVG"
 import CenterFlowersSVG from "../SVGs/Scenery/CenterFlowersSVG"
-import GameMasterSVG from "../SVGs/Scenery/GameMasterSVG"
 import LeftBushSVG from "../SVGs/Scenery/LeftBushSVG"
 import LeftFieldSVG from "../SVGs/Scenery/LeftFieldSVG"
 import LeftFlowersSVG from "../SVGs/Scenery/LeftFlowersSVG"
@@ -16,8 +15,6 @@ const Scenery = () => {
 
   return (
     <Container>
-
-      {/* <GameMasterSVG /> */}
 
       <div className="flowersWrapper">
         <LeftFlowersSVG />
