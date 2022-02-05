@@ -5,7 +5,7 @@ import { Section } from "./styles"
 const FaqSection = () => {
 
   return (
-    <Section>
+    <Section id="faq">
       <Title>FAQ</Title>
 
       <div className="faqCardsWrapper">

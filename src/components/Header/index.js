@@ -6,12 +6,27 @@ import DiscordSVG from '../SVGs/DiscordSVG'
 
 const Header = () => {
 
+  // let hero = document.getElementById("hero");
+  // e.preventDefault();  // Stop Page Reloading
+  // hero && hero.scrollIntoView();
+
+  const smoothScroll = (e, targetId) => {
+    e.preventDefault()
+    const targetPosition = document.getElementById(targetId);
+    targetPosition && targetPosition.scrollIntoView({ behavior: 'smooth' })
+    // console.log(targetPosition)
+    //   window.scroll({
+    //   top: targetPosition,
+    //   behavior: 'smooth'
+    // })
+  }
+
   return (
     <Container>
       <Nav>
-        <NavLink>TEAM</NavLink>
-        <NavLink>ROADMAP</NavLink>
-        <NavLink>FAQ</NavLink>
+        <NavLink onClick={(e) => smoothScroll(e, 'story')}>TEAM</NavLink>
+        <NavLink onClick={(e) => smoothScroll(e, 'roadmap')}>ROADMAP</NavLink>
+        <NavLink onClick={(e) => smoothScroll(e, 'faq')}>FAQ</NavLink>
       </Nav>
 
       <div>

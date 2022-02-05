@@ -6,7 +6,7 @@ import { Section } from "./styles"
 const RoadmapSection = () => {
 
   return(
-    <Section>
+    <Section id="roadmap">
       <div className='topInfoWrapper'>
         <Title>ROADMAP</Title>
         

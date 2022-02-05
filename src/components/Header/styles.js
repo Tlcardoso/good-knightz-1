@@ -4,7 +4,7 @@ export const Container = styled.div`
   width: 100%;
   position: absolute;
   top: 0;
-  z-index: 10;
+  z-index: 11;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -28,6 +28,11 @@ export const Nav = styled.nav`
 export const NavLink = styled.p`
   font-size: 24px;
   font-weight: 900;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: 4px solid var(--black);
+  }
 `
 
 export const IconWrapper = styled.div`

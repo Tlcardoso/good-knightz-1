@@ -5,7 +5,7 @@ import { Section } from "./styles"
 const StorySection = () => {
 
   return(
-    <Section>
+    <Section id="story">
       <Title>A GOOD KNIGHTZ STORY</Title>
       
       <Text>
