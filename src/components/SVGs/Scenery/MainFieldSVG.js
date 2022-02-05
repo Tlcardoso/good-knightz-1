@@ -1,8 +1,8 @@
-const MainFieldSVG = () => (
+const MainFieldSVG = ({ scale = 1 }) => (
   <div>
     <svg
-      width="1913"
-      height="229"
+      width={1913 * scale}
+      height={229 * scale}
       viewBox="0 0 1913 229"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

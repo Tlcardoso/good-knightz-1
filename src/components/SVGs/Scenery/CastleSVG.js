@@ -1,8 +1,8 @@
-const CastleSVG = () => (
+const CastleSVG = ({ scale = 1 }) => (
   <div>
     <svg
-      width="684"
-      height="596"
+      width={684 * scale}
+      height={596 * scale}
       viewBox="0 0 684 596"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

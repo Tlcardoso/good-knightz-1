@@ -1,8 +1,8 @@
-const RightBushSVG = () => (
+const RightBushSVG = ({ scale = 1 }) => (
   <div>
     <svg
-      width="565"
-      height="361"
+      width={565 * scale}
+      height={361 * scale}
       viewBox="0 0 565 361"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

@@ -1,8 +1,8 @@
-const RightTreeSVG = () => (
+const RightTreeSVG = ({ scale = 1 }) => (
   <div>
     <svg
-      width="528"
-      height="869"
+      width={528 * scale}
+      height={869 * scale}
       viewBox="0 0 528 869"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

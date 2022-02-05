@@ -13,12 +13,15 @@ const Home = () => {
 
   return (
     <>
-    <Scenery />
     <Container>
-      {/* <Header /> */}
+      <Header />
       
-      <HomeSection />
-      <StorySection />
+      <div className="sceneryPath">
+        <Scenery />
+        <HomeSection />
+        <StorySection />
+      </div>
+      
       <RoadmapSection />
       <MeetSection />
       <PartnerSection />

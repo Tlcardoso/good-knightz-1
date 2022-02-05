@@ -1,8 +1,8 @@
-const GameMasterSVG = () => (
+const GameMasterSVG = ({ scale }) => (
   <div>
     <svg
-      width="354"
-      height="402"
+      width={354 * scale}
+      height={402 * scale}
       viewBox="0 0 354 402"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
