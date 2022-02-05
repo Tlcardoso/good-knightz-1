@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: min(1170px, 90vw);
+  width: min(1170px, 90%);
   padding: 35px 30px;
   color: var(--white);
   background: var(--purple-light);

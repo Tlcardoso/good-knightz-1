@@ -8,6 +8,7 @@ export const Section = styled.div`
   justify-content: center;
 
   .faqCardsWrapper {
+    width: 100%;
     > div {
       margin: 20px auto;
     }
