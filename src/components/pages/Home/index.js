@@ -7,12 +7,15 @@ import PartnerSection from "../../sections/Partner";
 import { Container } from './styles'
 import FaqSection from "../../sections/FAQ";
 import Footer from "../../Footer";
+import Scenery from "../../Scenery";
 
 const Home = () => {
 
   return (
+    <>
+    <Scenery />
     <Container>
-      <Header />
+      {/* <Header /> */}
       
       <HomeSection />
       <StorySection />
@@ -23,6 +26,7 @@ const Home = () => {
 
       <Footer />
     </Container>
+    </>
   )
 }
 
