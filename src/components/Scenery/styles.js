@@ -9,13 +9,9 @@ export const Container = styled.div`
 
   .gameMaster {
     position: absolute;
-    bottom: 120px;
-    left: 160px;
+    bottom: 145px;
+    left: 225px;
     z-index: 3;
-
-    img {
-      /* height: 250px; */
-    }
   }
 
   .flowersWrapper {
@@ -94,6 +90,11 @@ export const Container = styled.div`
 
   @media (max-width: 1280px) {
     .gameMaster {
+      position: absolute;
+      bottom: 120px;
+      left: 160px;
+      z-index: 3;
+
       img {
         height: 250px;
       }
@@ -101,6 +102,10 @@ export const Container = styled.div`
   }
 
   @media (max-width: 768px) {
+    .gameMaster {
+      display: none;
+    }
+
     svg {
       display: none;
     }
