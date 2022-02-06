@@ -1,12 +1,25 @@
+import { useState, useEffect } from "react"
 import { Title } from "../../Title/styles"
 import { Text } from "../../Text/styles"
 import RoadmapCard from '../../cards/RoadmapCard'
 import { Section } from "./styles"
+import useWindowSize from "../../../Hooks/useWindowSize"
+import StarsSVG from "../../SVGs/Scenery/StarsSVG"
 
 const RoadmapSection = () => {
+  const [scale, setScale] = useState(1)
+  const size = useWindowSize();
+  
+  useEffect(() => {
+    setScale(size.width / 1920)
+  }, [size])
 
   return(
     <Section id="roadmap">
+      <div className="starsWrapper">
+        <StarsSVG scale={scale} />
+      </div>
+
       <div className='topInfoWrapper'>
         <Title>ROADMAP</Title>
         

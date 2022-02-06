@@ -15,7 +15,7 @@ import { Container, GreenTrack } from "./styles"
 
 
 const Scenery = () => {
-  const [scale, setScale] = useState(0.65)
+  const [scale, setScale] = useState(1)
   const size = useWindowSize();
   
   useEffect(() => {
