@@ -7,6 +7,17 @@ export const Container = styled.div`
   top: 0;
   overflow: hidden;
 
+  .gameMaster {
+    position: absolute;
+    bottom: 120px;
+    left: 160px;
+    z-index: 3;
+
+    img {
+      /* height: 250px; */
+    }
+  }
+
   .flowersWrapper {
     div {
       position: absolute;
@@ -79,6 +90,14 @@ export const Container = styled.div`
     bottom: 0;
     right: 50px;
     z-index: 1;
+  }
+
+  @media (max-width: 1280px) {
+    .gameMaster {
+      img {
+        height: 250px;
+      }
+    }
   }
 
   @media (max-width: 768px) {
