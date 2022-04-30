@@ -6,6 +6,16 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 
+  .teste{
+    position: relative;
+    z-index: 1 ;
+  }
+
+  .teste2{
+    position: relative;
+    z-index: 2 ;
+  }
+
   section {
     position: relative;
     z-index: 10;
@@ -19,7 +29,7 @@ export const Container = styled.div`
       #fff8ec 25%,
       #ea90a0 50%,
       #69529a 75%,
-      #392a51 100%
+      #69529a 0%
     );
   }
 

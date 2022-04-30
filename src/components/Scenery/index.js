@@ -1,58 +1,38 @@
 import { useEffect, useState } from "react"
 import useWindowSize from "../../Hooks/useWindowSize"
 import CastleSVG from "../SVGs/Scenery/CastleSVG"
-import CenterFlowersSVG from "../SVGs/Scenery/CenterFlowersSVG"
-import LeftBushSVG from "../SVGs/Scenery/LeftBushSVG"
 import LeftFieldSVG from "../SVGs/Scenery/LeftFieldSVG"
-import LeftFlowersSVG from "../SVGs/Scenery/LeftFlowersSVG"
 import LeftTreeSVG from "../SVGs/Scenery/LeftTreeSVG"
 import MainFieldSVG from "../SVGs/Scenery/MainFieldSVG"
-import RightBushSVG from "../SVGs/Scenery/RightBushSVG"
-import RightFlowersSVG from "../SVGs/Scenery/RightFlowersSVG"
 import RightTreeSVG from "../SVGs/Scenery/RightTreeSVG"
+import useBrightness from '../../Hooks/useBrightness'
 import { Container } from "./styles"
+import useParallax from "../../Hooks/useParallax"
+import useReverse from "../../Hooks/useReverse"
 
 
 const Scenery = () => {
-  const [scale, setScale] = useState(1)
-  const size = useWindowSize();
+
+
+  const clarity = useBrightness()
+  const tree = useParallax(1300, 1, 0.60)
+  const castle = useReverse(1920, 1, 1.37)
+
+  console.log(castle)
   
-  useEffect(() => {
-    // 1920px is the default width of the figma design
-    // Need to recalculate the scale to fit the screen
-    setScale(size.width / 1920)
-  }, [size])
+
 
   return (
     <>
-    <Container>
-      <div className="flowersWrapper">
-        <LeftFlowersSVG scale={scale}/>
-        <CenterFlowersSVG scale={scale}/>
-        <RightFlowersSVG scale={scale}/>
-      </div>
-
-      <div className="bushWrapper">
-        <LeftBushSVG scale={scale}/>
-        <RightBushSVG scale={scale}/>
-      </div>
-
-      <div className="gameMaster">
-        <img src="svg/gm.svg" alt="Game Master"/>
-      </div>
+    <Container style={{filter: `brightness(${clarity})`}}>
 
       <div className="treesWrapper">
-        <LeftTreeSVG scale={scale}/>
-        <RightTreeSVG scale={scale}/>
-      </div>
-
-      <div className="fieldWrapper">
-        <LeftFieldSVG scale={scale}/>
-        <MainFieldSVG scale={scale}/>
+        <LeftTreeSVG scale={tree}/>
+        <RightTreeSVG scale={tree}/>
       </div>
 
       <div className="castleWrapper">
-        <CastleSVG scale={scale}/>
+        <CastleSVG scale={castle}/>
       </div>
     </Container>
     </>

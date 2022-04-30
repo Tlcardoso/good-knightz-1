@@ -8,8 +8,13 @@ import { Container } from './styles'
 import FaqSection from "../../sections/FAQ";
 import Footer from "../../Footer";
 import Scenery from "../../Scenery";
+import Scenery2 from "../../Scenery2";
+import { useRef } from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 
 const Home = () => {
+
 
   return (
     <>
@@ -19,7 +24,12 @@ const Home = () => {
       <div className="sceneryPath">
         <Scenery />
         <HomeSection />
-        <StorySection />
+        <div  className="teste">
+          <StorySection/>
+        </div>
+        <div className="teste2">
+          <Scenery2 />
+        </div>
       </div>
       
       <div className="nonScenary">

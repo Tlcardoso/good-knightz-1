@@ -10,8 +10,8 @@ export const Container = styled.div`
 
   .gameMaster {
     position: absolute;
-    bottom: 145px;
-    left: 225px;
+    top: 160px;
+    left: 400px;
     z-index: 3;
   }
 
@@ -103,9 +103,6 @@ export const Container = styled.div`
   }
 
   @media (max-width: 768px) {
-    .gameMaster {
-      display: none;
-    }
 
     svg {
       display: none;
