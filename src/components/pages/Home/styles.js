@@ -6,12 +6,12 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 
-  .teste{
+  .Story{
     position: relative;
     z-index: 1 ;
   }
 
-  .teste2{
+  .Scenery2{
     position: relative;
     z-index: 2 ;
   }

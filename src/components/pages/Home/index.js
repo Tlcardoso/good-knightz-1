@@ -9,9 +9,6 @@ import FaqSection from "../../sections/FAQ";
 import Footer from "../../Footer";
 import Scenery from "../../Scenery";
 import Scenery2 from "../../Scenery2";
-import { useRef } from "react";
-import { useEffect } from "react";
-import { useState } from "react";
 
 const Home = () => {
 
@@ -24,10 +21,10 @@ const Home = () => {
       <div className="sceneryPath">
         <Scenery />
         <HomeSection />
-        <div  className="teste">
+        <div  className="Story">
           <StorySection/>
         </div>
-        <div className="teste2">
+        <div className="Scenery2">
           <Scenery2 />
         </div>
       </div>
