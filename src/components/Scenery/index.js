@@ -1,34 +1,42 @@
 import { useEffect, useState } from "react"
 import useWindowSize from "../../Hooks/useWindowSize"
 import CastleSVG from "../SVGs/Scenery/CastleSVG"
-import LeftFieldSVG from "../SVGs/Scenery/LeftFieldSVG"
 import LeftTreeSVG from "../SVGs/Scenery/LeftTreeSVG"
-import MainFieldSVG from "../SVGs/Scenery/MainFieldSVG"
 import RightTreeSVG from "../SVGs/Scenery/RightTreeSVG"
 import useBrightness from '../../Hooks/useBrightness'
 import { Container } from "./styles"
-import useParallax from "../../Hooks/useParallax"
 import useReverse from "../../Hooks/useReverse"
+import useMoveItems from "../../Hooks/useMoveItems"
 
 
 const Scenery = () => {
 
+  const [scale, setScale] = useState(1)
+
+  const move = useMoveItems(0, 25)
+
+  const size = useWindowSize();
+  
+  useEffect(() => {
+    // 1920px is the default width of the figma design
+    // Need to recalculate the scale to fit the screen
+    setScale(size.width / 1920)
+  }, [size])
+
 
   const clarity = useBrightness()
-  const tree = useParallax(1300, 1, 0.60)
   const castle = useReverse(1920, 1, 1.37)
-
-  console.log(castle)
-  
-
 
   return (
     <>
     <Container style={{filter: `brightness(${clarity})`}}>
 
-      <div className="treesWrapper">
-        <LeftTreeSVG scale={tree}/>
-        <RightTreeSVG scale={tree}/>
+      <div className="treesWrapper1" style={{left: `${-move}%`}}>
+        <LeftTreeSVG scale={scale}/>
+      </div>
+
+      <div className="treesWrapper2" style={{right: `${-move}%`}}>
+        <RightTreeSVG scale={scale}/>
       </div>
 
       <div className="castleWrapper">
