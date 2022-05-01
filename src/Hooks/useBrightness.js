@@ -24,12 +24,12 @@ const useBrightness = () => {
   
         if(scroll > pos){
           setPos(scroll)
-          setClarity(clarity - 0.05)
+          setClarity(clarity - 0.03)
         } 
         
           if(scroll < pos) {
               setPos(scroll)
-              setClarity(clarity + 0.05)
+              setClarity(clarity + 0.03)
           }
       }, [scroll])
 
