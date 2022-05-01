@@ -25,7 +25,6 @@ const useParallax = (initial, speed, limit) => {
       }, [scroll])
     
     if(scale < limit){
-        console.log('CHEGOU', scale)
         return setScale(limit)
     }
     
