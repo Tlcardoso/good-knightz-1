@@ -28,4 +28,13 @@ export const Container = styled.div`
     right: 0;
     z-index: 1;
   }
+
+  @media (max-width: 768px) {
+    .gameMaster {
+      display: none;
+    }
+    svg {
+      display: none;
+    }
+  }
 `;

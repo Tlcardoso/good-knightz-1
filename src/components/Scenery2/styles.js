@@ -7,6 +7,15 @@ export const Container = styled.div`
   top: 0;
   overflow: hidden;
 
+  .gameMaster{
+    img{
+      position: relative;
+      height: 250px;
+      left: 150%;
+      bottom: 100px;
+    }
+  }
+
 
   .flowersWrapper1 {
       position: absolute;
@@ -56,6 +65,15 @@ export const Container = styled.div`
       bottom: -40px;
       left: -16px;
       transform: rotate(6deg);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .gameMaster {
+      display: none;
+    }
+    svg {
+      display: none;
     }
   }
 `;

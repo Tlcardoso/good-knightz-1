@@ -50,6 +50,9 @@ const Scenery2 = () => {
             <div className="fieldWrapper">
                 <LeftFieldSVG scale={field}/>
                 <MainFieldSVG scale={field}/>
+                <div className="gameMaster">
+                    <img src="svg/gm.svg" alt="Game Master"/>
+                </div>
             </div>
 
             <div className="bushWrapper1" style={{left: `${-move}%`}}>
