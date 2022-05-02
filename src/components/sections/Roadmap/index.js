@@ -5,6 +5,8 @@ import RoadmapCard from '../../cards/RoadmapCard'
 import { Section } from "./styles"
 import useWindowSize from "../../../Hooks/useWindowSize"
 import StarsSVG from "../../SVGs/Scenery/StarsSVG"
+import PetRockSVG from "../../SVGs/Scenery/PetRockSVG"
+import KnightOwlSVG from "../../SVGs/Scenery/KnightOwlSVG"
 
 const RoadmapSection = () => {
   const [scale, setScale] = useState(1)
@@ -18,6 +20,11 @@ const RoadmapSection = () => {
     <Section id="roadmap">
       <div className="starsWrapper">
         <StarsSVG scale={scale} />
+      </div>
+
+      <div className="petContainer">
+        <PetRockSVG scale={scale}/>
+        <KnightOwlSVG scale={scale}/>
       </div>
 
       <div className='topInfoWrapper'>
