@@ -3,43 +3,39 @@ import useWindowSize from './useWindowSize';
 
 
 const useParallax = (initial, speed, limit) => {
+  const [scroll, setScroll] = useState(0);
+  const [scale, setScale] = useState(1)
+  const [pos, setPos] = useState(scroll)
+  
+  const size = useWindowSize();
 
-    const [scroll, setScroll] = useState(0);
+  const handleNavigation = (e) => {
+    const window = e.currentTarget;
+    setScroll(window.scrollY);
+  };
 
-    const size = useWindowSize();
-    const [scale, setScale] = useState(1)
+  useEffect(() => {
+    // Control ScrollY moving
+    setScroll(window.scrollY);
+    window.addEventListener("scroll", (e) => handleNavigation(e));
+  }, [scroll])
+  
+  if(scale < limit){
+    return setScale(limit)
+  }
+  
 
-    const [pos, setPos] = useState(scroll)
+  if(scroll > pos){
+    setPos(scroll)
+    setScale(size.width / (initial + pos * speed))
+  } 
+  
+  if(scroll < pos) {
+    setPos(scroll)
+    setScale(size.width / (initial + pos * speed))
+  }
 
-
-
-    const handleNavigation = (e) => {
-        const window = e.currentTarget;
-        setScroll(window.scrollY);
-     };
-
-    useEffect(() => {
-        // Control ScrollY moving
-        setScroll(window.scrollY);
-        window.addEventListener("scroll", (e) => handleNavigation(e));
-      }, [scroll])
-    
-    if(scale < limit){
-        return setScale(limit)
-    }
-    
-
-    if(scroll > pos){
-      setPos(scroll)
-      setScale(size.width / (initial + pos * speed))
-    } 
-    
-      if(scroll < pos) {
-        setPos(scroll)
-        setScale(size.width / (initial + pos * speed))
-      }
-
-    return scale
+  return scale
 }
 
 export default useParallax
