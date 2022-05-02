@@ -1,4 +1,10 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const petAnimate = keyframes`
+  0% { top: 0; }
+  50% { top: 30px }
+  100% { top: 0 }
+`;
 
 export const Section = styled.section`
   margin: 50px auto;
@@ -11,6 +17,26 @@ export const Section = styled.section`
   .starsWrapper {
     position: absolute;
     top: 20px;
+  }
+
+  .petContainer{
+    position: absolute;
+    top: 20px;
+    width: 100%;
+
+    div{
+      position: absolute;
+      animation: ${petAnimate} 1.5s linear infinite;
+    }
+    
+    div:nth-child(1) {
+        left: 50px;
+    }
+
+    div:nth-child(2) {
+      right: 50px;
+    }
+
   }
   
   .topInfoWrapper{
@@ -36,6 +62,10 @@ export const Section = styled.section`
     }
 
     .starsWrapper {
+      display: none;
+    }
+
+    .petContainer {
       display: none;
     }
   }

@@ -34,7 +34,7 @@ const Header = () => {
             <EmailSVG />
           </IconSquare>
         </IconWrapper>
-        <Button>CONNECT WALLET</Button>
+        <Button>CONNECT</Button>
       </div>
     </Container>
   )

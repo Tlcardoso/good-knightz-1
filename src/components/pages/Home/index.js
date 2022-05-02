@@ -8,8 +8,10 @@ import { Container } from './styles'
 import FaqSection from "../../sections/FAQ";
 import Footer from "../../Footer";
 import Scenery from "../../Scenery";
+import Scenery2 from "../../Scenery2";
 
 const Home = () => {
+
 
   return (
     <>
@@ -19,7 +21,12 @@ const Home = () => {
       <div className="sceneryPath">
         <Scenery />
         <HomeSection />
-        <StorySection />
+        <div  className="Story">
+          <StorySection/>
+        </div>
+        <div className="Scenery2">
+          <Scenery2 />
+        </div>
       </div>
       
       <div className="nonScenary">

@@ -1,20 +1,20 @@
 import { useEffect, useState } from "react"
 import useWindowSize from "../../Hooks/useWindowSize"
 import CastleSVG from "../SVGs/Scenery/CastleSVG"
-import CenterFlowersSVG from "../SVGs/Scenery/CenterFlowersSVG"
-import LeftBushSVG from "../SVGs/Scenery/LeftBushSVG"
-import LeftFieldSVG from "../SVGs/Scenery/LeftFieldSVG"
-import LeftFlowersSVG from "../SVGs/Scenery/LeftFlowersSVG"
 import LeftTreeSVG from "../SVGs/Scenery/LeftTreeSVG"
-import MainFieldSVG from "../SVGs/Scenery/MainFieldSVG"
-import RightBushSVG from "../SVGs/Scenery/RightBushSVG"
-import RightFlowersSVG from "../SVGs/Scenery/RightFlowersSVG"
 import RightTreeSVG from "../SVGs/Scenery/RightTreeSVG"
+import useBrightness from '../../Hooks/useBrightness'
 import { Container } from "./styles"
+import useReverse from "../../Hooks/useReverse"
+import useMoveItems from "../../Hooks/useMoveItems"
 
 
 const Scenery = () => {
+
   const [scale, setScale] = useState(1)
+
+  const move = useMoveItems(0, 25)
+
   const size = useWindowSize();
   
   useEffect(() => {
@@ -23,36 +23,24 @@ const Scenery = () => {
     setScale(size.width / 1920)
   }, [size])
 
+
+  const clarity = useBrightness()
+  const castle = useReverse(1920, 1, 1.37)
+
   return (
     <>
-    <Container>
-      <div className="flowersWrapper">
-        <LeftFlowersSVG scale={scale}/>
-        <CenterFlowersSVG scale={scale}/>
-        <RightFlowersSVG scale={scale}/>
-      </div>
+    <Container style={{filter: `brightness(${clarity})`}}>
 
-      <div className="bushWrapper">
-        <LeftBushSVG scale={scale}/>
-        <RightBushSVG scale={scale}/>
-      </div>
-
-      <div className="gameMaster">
-        <img src="svg/gm.svg" alt="Game Master"/>
-      </div>
-
-      <div className="treesWrapper">
+      <div className="treesWrapper1" style={{left: `${-move}%`}}>
         <LeftTreeSVG scale={scale}/>
+      </div>
+
+      <div className="treesWrapper2" style={{right: `${-move}%`}}>
         <RightTreeSVG scale={scale}/>
       </div>
 
-      <div className="fieldWrapper">
-        <LeftFieldSVG scale={scale}/>
-        <MainFieldSVG scale={scale}/>
-      </div>
-
       <div className="castleWrapper">
-        <CastleSVG scale={scale}/>
+        <CastleSVG scale={castle}/>
       </div>
     </Container>
     </>

@@ -6,8 +6,8 @@ const HomeSection = () => {
   return(
     <Section>
       <div>
-        <img src="svg/logo.svg" alt="Good knightz logo"/>
-        <Button main>MINT KNIGHTZ</Button>
+        <img src="images/Logo_small.png" alt="Good knightz logo"/>
+        <Button main>MINT</Button>
         <select>
           <option value="1">1</option>
           <option value="2">2</option>
