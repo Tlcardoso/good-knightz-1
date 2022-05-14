@@ -1,8 +1,8 @@
-const KnightOwlSVG = ({ scale = 1 }) => (
+const KnightOwlSVG = ({ scale = 1, width=209, height=209 }) => (
     <div>
         <svg
-            width={209 * scale}
-            height={209 * scale}
+            width={width * scale}
+            height={height * scale}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 294.78 251.99"
         >
