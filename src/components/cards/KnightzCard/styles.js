@@ -28,5 +28,6 @@ export const Container = styled.div`
     color: var(--white);
     opacity: 0.75;
     width: 270px;
+    min-height: 63px;
   }
 `
