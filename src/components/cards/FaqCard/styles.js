@@ -15,6 +15,10 @@ export const Container = styled.div`
     transition: all 0.3s ease;
   }
 
+  .question{
+    max-width: 80%;
+  }
+
   .toggle {
     width: 45px;
     height: 45px;
