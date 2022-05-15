@@ -21,6 +21,7 @@ export const Container = styled.div`
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 10px;
+    text-decoration: none;
   }
 
   .description {

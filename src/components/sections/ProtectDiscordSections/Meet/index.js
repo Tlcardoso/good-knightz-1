@@ -22,11 +22,11 @@ const TeamSection = () => {
     <Container>
         <Title>MEET THE TEAM</Title>
         <div className='knightzWrapper'>
-          <KnightzCard name='KYLE HIGDON' nickName='@cap_plantain' avatar='member-01'>
+          <KnightzCard name='Kyle Higdon' nickName='@cap_plantain' avatar='member-01' link={'https://twitter.com/Cap_Plantain'}>
           Good Knightz NFTs co-founder Good Knight Bot Developer
           </KnightzCard>
 
-          <KnightzCard name='NATALI VORNIC' nickName='@cap_plantain' avatar='member-02'>
+          <KnightzCard name='Natalia Vornic' nickName='@minibossgrl' avatar='member-02' link={'https://twitter.com/minibossgrl'}>
           Good Knightz NFTs co-founder Community Engagements and Administration
           </KnightzCard>
         </div>
