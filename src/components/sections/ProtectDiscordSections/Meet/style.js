@@ -33,12 +33,6 @@ const Container = styled.div`
     @media (max-width: 768px) {
         .knightzWrapper{
             justify-content: center;
-
-            > * {
-                &:nth-child(1) {
-                   margin-bottom: 5%;
-                }
-            }
         }
 
         .DustContainer{

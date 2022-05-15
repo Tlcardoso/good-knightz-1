@@ -26,7 +26,7 @@ const TeamSection = () => {
           Good Knightz NFTs co-founder Good Knight Bot Developer
           </KnightzCard>
 
-          <KnightzCard name='KYLE HIGDON' nickName='@cap_plantain' avatar='member-02'>
+          <KnightzCard name='NATALI VORNIC' nickName='@cap_plantain' avatar='member-02'>
           Good Knightz NFTs co-founder Community Engagements and Administration
           </KnightzCard>
         </div>
