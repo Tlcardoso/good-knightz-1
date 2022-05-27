@@ -13,10 +13,12 @@ export const Container = styled.div`
   .answer {
     opacity: 0.75;
     transition: all 0.3s ease;
+    margin-top: 20px;
+    width: 95%;
   }
 
   .question{
-    max-width: 80%;
+    max-width: 78%;
   }
 
   .toggle {
