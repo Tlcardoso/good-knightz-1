@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react'
 import { Container } from './styles'
-import Carousel from 'react-elastic-carousel'
 
 const Slideshow = () => {
 
