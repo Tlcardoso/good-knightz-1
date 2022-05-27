@@ -8,6 +8,7 @@ const Container = styled.div`
     position: relative;
     padding-left: 2.5%;
     padding-right: 2.5%;
+    z-index: 10;
 
     > * {
         &:nth-child(1) {
@@ -64,6 +65,7 @@ const Container = styled.div`
             &:nth-child(2) {
                 flex-direction: column;
                 align-items: center;
+                font-size: 5vw;
             }
         }
     }

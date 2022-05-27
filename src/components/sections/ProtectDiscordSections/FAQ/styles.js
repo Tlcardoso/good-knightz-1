@@ -24,7 +24,7 @@ const Container = styled.div`
     .StardustContainer{
         position: absolute;
         right: 0;
-        top: -13%;
+        top: -50px;;
         z-index: 1;
 
         > * {
@@ -55,7 +55,7 @@ const Container = styled.div`
     .OwlContainer{
         position: absolute;
         left: 3%;
-        top: 20%;
+        top: 170px;
 
         > * {
 
@@ -67,8 +67,8 @@ const Container = styled.div`
 
             &:nth-child(2) {
                 position: absolute;
-                left: -3%;
-                top: 80%;
+                left: 10%;
+                top: 70%;
             }
         }
     }
@@ -76,7 +76,7 @@ const Container = styled.div`
     .RockContainer{
         position: absolute;
         right: 2%;
-        top: 57%;
+        top: 500px;
 
         > * {
 
@@ -102,6 +102,11 @@ const Container = styled.div`
     }
 
     @media (max-width: 768px) {
+
+        .faqCardsWrapper{
+            margin-top: 0px;
+        }
+
         .StardustContainer{
             display: none;
         }
