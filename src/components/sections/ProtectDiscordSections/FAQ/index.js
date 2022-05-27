@@ -71,28 +71,28 @@ const SectionFAQ = () => {
         </div>
 
         <div className='OwlContainer'>
-          <KnightOwlSVG 
-            scale={scale}
-            width={129}
-            height={102}
+          <img
+            src="gif/Owl.gif"
+            width={109 * scale}
+            height={82 * scale}
           />
           <Rock1SVG
             scale={scale}
-            width={199}
-            height={179}
+            width={109}
+            height={149}
           />
         </div>
 
         <div className='RockContainer'>
-          <PetRockSVG
-            scale={scale}
-            width={104}
-            height={88}
+          <img
+            src="gif/Rock.gif"
+            width={94 * scale}
+            height={78 * scale}
           />
           <Rock3SVG
             scale={scale}
-            width={251}
-            height={152}
+            width={201}
+            height={102}
           />
         </div>
 

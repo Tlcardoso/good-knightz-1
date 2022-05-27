@@ -6,6 +6,7 @@ const Container = styled.section`
     color: #FFFF;
     margin-top: 50px;
     position: relative;
+    z-index: 5;
 
     .TextContainer{
         margin-left: 5%;
@@ -15,6 +16,7 @@ const Container = styled.section`
         position: absolute;
         right: -4%;
         top: 27%;
+        z-index: 5;
 
         > * {
             &:nth-child(1) {
@@ -34,6 +36,7 @@ const Container = styled.section`
         position: absolute;
         top: -70px;
         right: -60px;
+        z-index: 1;
 
         > * {
             &:nth-child(2) {

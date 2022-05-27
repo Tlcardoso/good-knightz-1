@@ -44,14 +44,8 @@ const Container = styled.div`
     }
 
     .noteContainer{
-        justify-content: center;
         width: 44.5vw;
         border-radius: 12px;
-
-        img{
-            width: 100%;
-            border-radius: 12px;
-        }
     }
 
     .StardustContainer{
@@ -69,17 +63,26 @@ const Container = styled.div`
         .TextContainer{
             width: 95%;
             margin-bottom: 5%;
+            height: 100%;
+            padding: 10px;
 
             div{
-    
+                
                 p{
-                    font-size: max(2vw, 5px);
+                    font-size: max(4vw, 5px);
+                }
+
+                > * {
+                    &:nth-child(1) {
+                        font-size: 5vw;
+                    }
                 }
             }
         }
         
         .noteContainer{
             width: 95%;
+            height: auto;
         }
     }
 `

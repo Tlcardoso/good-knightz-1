@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import useWindowSize from '../../../../Hooks/useWindowSize'
+import Slideshow from '../../../Slideshow.js'
 import Stardust2SVG from '../../../SVGs/ProtectDiscordSections/Stardust2SVG'
 import { Container } from './styles'
 
@@ -29,7 +30,7 @@ const AntiLink = () => {
         </div>
 
         <div className='noteContainer'>
-          <img src='./images/laptop.png'/>
+          <Slideshow/>
         </div>
 
         <div className='StardustContainer'>
