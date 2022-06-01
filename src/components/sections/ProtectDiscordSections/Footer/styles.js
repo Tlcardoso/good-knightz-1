@@ -20,10 +20,16 @@ const Container = styled.div`
             display: flex;
             justify-content: space-between;
             color: #FFF;
+            border: none;
       
             p {
               font-size: 18px;
               font-weight: 500 medium;
+              color: white;
+            }
+
+            a{
+                text-decoration: none; 
             }
 
             .supportContainer{

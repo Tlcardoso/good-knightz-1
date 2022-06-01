@@ -1,12 +1,11 @@
 import GlobalStyles from "./styles/GlobalStyles";
-import Home from "./components/pages/Home";
-import ProtectDiscord from "./components/pages/ProtectDiscord";
+import RouteDistribuitor from "./Routes";
 
 function App() {
   return (
     <div className="App">
       <GlobalStyles />
-      <ProtectDiscord />
+      <RouteDistribuitor/>
     </div>
   );
 }

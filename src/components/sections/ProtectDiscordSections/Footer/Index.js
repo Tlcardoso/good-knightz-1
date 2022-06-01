@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import InfoCard from '../../../cards/InfoCard'
 import DiscordSVG from '../../../SVGs/ProtectDiscordSections/DiscordSVG'
 import WavesSVG from '../../../SVGs/WavesSVG'
@@ -18,10 +19,14 @@ const FooterNew = () => {
             </div>
 
             <div className='creditsTermsAndCondition'>
-                <p>© Rarefied Studios, LLC</p>
+                <Link to="/privacy">
+                    <p>© Rarefied Studios, LLC</p>
+                </Link>
                 <div className='supportContainer'>
                     <p>SUPPORT</p>
-                    <p>Terms OF SERVICE </p>
+                    <Link to="/terms">
+                        <p>Terms OF SERVICE </p>
+                    </Link>
                 </div>
             </div>
         </div>

@@ -53,9 +53,11 @@ const ItemsCard = () => {
                             Anti-link technology
                         </InfoCard>
 
-                        <InfoCard spotlight>
-                            Documentation
-                        </InfoCard>
+                        <a href='https://docs.goodknightbot.com/' className='documentation'>
+                            <InfoCard spotlight>
+                                Documentation
+                            </InfoCard>
+                        </a>
                     </div>
                 </InfoContainer>
             </div>
