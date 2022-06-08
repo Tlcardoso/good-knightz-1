@@ -20,7 +20,6 @@ const Container = styled.div`
             display: flex;
             justify-content: space-between;
             color: #FFF;
-            border: none;
       
             p {
               font-size: 18px;
@@ -48,6 +47,11 @@ const Container = styled.div`
             margin-top: 5%;
             margin-bottom: 5%;
             
+
+            .link{
+                text-decoration: none;
+            }
+            
             > * {
                 &:nth-child(1) {
                     display: flex;
@@ -62,6 +66,7 @@ const Container = styled.div`
                     font-weight: 500;
                     font-size: 24px;
                     padding: 5px 0 5px 0;
+                    color: black;
                 }
             }
         }

@@ -11,8 +11,13 @@ const FooterNew = () => {
         <WavesSVG />
         <div className='footer'>
             <div className='buttonContainer'>
-                <div>Contact Us</div>
-                <InfoCard spotlight> 
+                <a href='mailto:info@rarefiedstudios.com' className='link'>
+                    <div>Contact Us</div>
+                </a>
+                <InfoCard 
+                    link='https://discord.com/oauth2/authorize?client_id=957481307405975552&permissions=805792792&scope=applications.commands%20bot' 
+                    spotlight
+                > 
                     <DiscordSVG fill={'#FFF'}/>
                     Add to your server
                 </InfoCard>

@@ -11,17 +11,22 @@ const Container = styled.div`
     font-style: normal;
     margin-bottom: 20px;
     margin-right: 15px;
-
-    p{
-        display: flex;
-        align-items: center;
-        text-align: center;
+    
+    .link {
         margin: auto;
         font-size: max(1em, 12px);
         line-height: 100%;
         font-weight: 600;
+        color: #FFF;
+        text-decoration: none;
 
+        p{
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
     }
+
 
     @media (max-width: 768px) {
         margin-right: 5px;
@@ -44,6 +49,10 @@ const LargeContainer = styled.div`
         font-size: max(1.5vw, 12px);
         line-height: 100%;
         font-weight: 600;
+    }
+
+    .link{
+        text-decoration: none;
     }
 
     @media (max-width: 768px) {

@@ -37,8 +37,11 @@ const ItemsCard = () => {
                         <InfoCard>
                             Instant server lockdown
                         </InfoCard>
-
-                        <InfoCard spotlight>
+            
+                        <InfoCard 
+                            link="https://discord.com/oauth2/authorize?client_id=957481307405975552&permissions=805792792&scope=applications.commands%20bot" 
+                            spotlight
+                        >
                             <DiscordSVG fill={'#FFF'}/>
                             Add to your server
                         </InfoCard>
@@ -53,11 +56,9 @@ const ItemsCard = () => {
                             Anti-link technology
                         </InfoCard>
 
-                        <a href='https://docs.goodknightbot.com/' className='documentation'>
-                            <InfoCard spotlight>
-                                Documentation
-                            </InfoCard>
-                        </a>
+                        <InfoCard link='https://docs.goodknightbot.com/' spotlight>
+                            Documentation
+                        </InfoCard>
                     </div>
                 </InfoContainer>
             </div>

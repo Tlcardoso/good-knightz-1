@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Container, LargeContainer } from './styles'
 
-const InfoCard = ({ children, spotlight, big }) => {
+const InfoCard = ({ children, spotlight, big, link }) => {
 
   const bgColor = spotlight === true ? `9948E6` : '3A2657';
 
@@ -10,7 +10,9 @@ const InfoCard = ({ children, spotlight, big }) => {
                 </LargeContainer>
 
   const small = <Container style={{ backgroundColor: `#${bgColor}` }}>
-                  <p>{children}</p>
+                  <a href={link} className='link'>
+                    <p>{children}</p>
+                  </a>
                 </Container>
 
   if (big) return large;
