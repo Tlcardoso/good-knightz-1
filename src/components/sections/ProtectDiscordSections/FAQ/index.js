@@ -26,7 +26,7 @@ const SectionFAQ = () => {
 
   return (
     <Container>
-        <Title>FAQ</Title>
+        <h1>FAQ</h1>
         <div className='faqCardsWrapper'>
           <FaqCard
             question="How does the Good Knight stop fake mint attacks?"
@@ -72,6 +72,7 @@ const SectionFAQ = () => {
 
         <div className='OwlContainer'>
           <img
+            draggable="false"
             src="gif/Owl.gif"
             width={109 * scale}
             height={82 * scale}
@@ -85,6 +86,7 @@ const SectionFAQ = () => {
 
         <div className='RockContainer'>
           <img
+            draggable="false"
             src="gif/Rock.gif"
             width={94 * scale}
             height={78 * scale}

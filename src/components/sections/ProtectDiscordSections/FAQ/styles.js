@@ -11,6 +11,11 @@ const Container = styled.div`
     position: relative;
     z-index: 10;
 
+    h1 {
+        font-size: 35px;
+        color: white;
+    }
+
     .faqCardsWrapper{
         margin-top: 50px;
         width: 80vw;

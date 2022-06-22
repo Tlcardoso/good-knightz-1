@@ -1,5 +1,18 @@
 import styled from "styled-components";
 
+const Linked = styled.a`
+    text-decoration: none;
+    display: flex;
+
+    .link {
+        margin: auto;
+        line-height: 100%;
+        font-weight: 600;
+        color: #FFF;
+        text-decoration: none;
+    }
+`
+
 const Container = styled.div`
     width: 17vw;
     min-width: 180px;
@@ -11,20 +24,17 @@ const Container = styled.div`
     font-style: normal;
     margin-bottom: 20px;
     margin-right: 15px;
+    background-color: red;
+    cursor: pointer;
     
-    .link {
-        margin: auto;
-        font-size: max(1em, 12px);
-        line-height: 100%;
-        font-weight: 600;
-        color: #FFF;
-        text-decoration: none;
 
-        p{
-            display: flex;
-            align-items: center;
-            text-align: center;
-        }
+    p{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-weight: 600;
+        font-size: 100%;
+        margin: auto;
     }
 
 
@@ -65,4 +75,4 @@ const LargeContainer = styled.div`
     }
 `
 
-export {Container, LargeContainer};
+export {Container, LargeContainer, Linked};

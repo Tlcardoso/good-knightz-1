@@ -20,7 +20,7 @@ const TeamSection = () => {
 
   return (
     <Container>
-        <Title>MEET THE TEAM</Title>
+        <h1>MEET THE TEAM</h1>
         <div className='knightzWrapper'>
           <KnightzCard name='Kyle Higdon' nickName='@cap_plantain' avatar='member-01' link={'https://twitter.com/Cap_Plantain'}>
           Good Knightz NFTs co-founder Good Knight Bot Developer

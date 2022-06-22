@@ -7,6 +7,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  scroll-behavior: smooth;
 
   @media (max-width: 768px) {
     padding: 0;

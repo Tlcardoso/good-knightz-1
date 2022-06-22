@@ -24,13 +24,13 @@ const FooterNew = () => {
             </div>
 
             <div className='creditsTermsAndCondition'>
-                <Link to="/privacy">
-                    <p>© Rarefied Studios, LLC</p>
-                </Link>
+                <p>© Rarefied Studios, LLC</p>
                 <div className='supportContainer'>
-                    <p>SUPPORT</p>
+                    <Link to="/privacy">
+                        <p>SUPPORT</p>
+                    </Link>
                     <Link to="/terms">
-                        <p>Terms OF SERVICE </p>
+                        <p>Terms of Service </p>
                     </Link>
                 </div>
             </div>

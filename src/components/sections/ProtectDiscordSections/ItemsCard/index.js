@@ -11,11 +11,33 @@ import HomeSection from '../Home'
 import { Container, InfoContainer } from './styles'
 import MoonSVG from '../../../SVGs/ProtectDiscordSections/MoonSVG'
 
-const ItemsCard = () => {
+const ItemsCard = ({reference, number}) => {
 
     const [scale, setScale] = useState(1)
 
     const size = useWindowSize();
+
+    const antiLinkScroll = (e) => {
+        number(3)
+        reference.current.scrollIntoView({ behavior: 'smooth', block: 'center' })  
+    }
+    
+    const instantServerScroll = (e) => {
+        number(2)
+        reference.current.scrollIntoView({ behavior: 'smooth', block: 'center' })  
+    }
+
+    const automatedServerScroll = (e) => {
+        number(1)
+        reference.current.scrollIntoView({ behavior: 'smooth', block: 'center' })  
+    }
+
+    const antiHackerScroll = (e) => {
+        number(0)
+        reference.current.scrollIntoView({ behavior: 'smooth', block: 'center' })  
+    }
+
+
 
     useEffect(() => {
         // 1920px is the default width of the figma design
@@ -23,18 +45,18 @@ const ItemsCard = () => {
         setScale(size.width / 1920)
     }, [size])
     return (
-        <Container>
+        <Container draggable="false">
             <div className='TextContainer'>
                 <HomeSection />
                 <h1>The Best Protector of<br /> your Discord Server</h1>
                 <h2>Community Security for Web3</h2>
                 <InfoContainer>
                     <div>
-                        <InfoCard>
+                        <InfoCard onClick={antiHackerScroll}>
                             Anti-hacker protection
                         </InfoCard>
 
-                        <InfoCard>
+                        <InfoCard onClick={instantServerScroll}>
                             Instant server lockdown
                         </InfoCard>
             
@@ -48,11 +70,11 @@ const ItemsCard = () => {
                     </div>
 
                     <div>
-                        <InfoCard>
+                        <InfoCard onClick={automatedServerScroll}>
                             Automated server audit
                         </InfoCard>
 
-                        <InfoCard>
+                        <InfoCard onClick={antiLinkScroll}>
                             Anti-link technology
                         </InfoCard>
 

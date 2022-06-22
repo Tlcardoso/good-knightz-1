@@ -1,16 +1,23 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
+import { images } from './slides';
 import { Container } from './styles'
 
-const Slideshow = () => {
+const Slideshow = ({indice}) => {
+    const [slide, setSlide] = useState(0)
 
-    const items = useRef();
+    useEffect(() => {
+        setSlide(indice)
+    },[indice])
 
     const previousImg = () => {
-        items.current.scrollBy(-500, 0)
+        if (slide == 0) return setSlide(slide)
+
+        return setSlide(slide - 1)
     }   
 
     const nextImg = () => {
-        items.current.scrollBy(500, 0)
+        if (slide == 3) return setSlide(slide)
+        setSlide(slide + 1)
     }
       
   return (
@@ -23,9 +30,10 @@ const Slideshow = () => {
                 <img src={'images/arrow.png'}/>
             </div>
         </div>
-        <div className='items' ref={items} id='items'>
-            <div className='item'><img src='gif/scam_example_note.gif'/></div>
-            <div className='item'><img src='gif/password_phone1.gif'/></div>   
+        <div className='items' id='items'>
+            <div className='item'>
+                {images[slide]}
+            </div>   
         </div>
     </Container>
   )

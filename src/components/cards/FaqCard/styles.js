@@ -5,7 +5,7 @@ export const Container = styled.div`
   padding: 35px 30px;
   color: var(--white);
   background: var(--purple-light);
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 500;
   border-radius: 12px;
   position: relative;

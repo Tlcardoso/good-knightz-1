@@ -9,42 +9,8 @@ const Container = styled.div`
     position: relative;
     z-index: 10;
 
-    .TextContainer{
-        justify-content: center;
-        width: 44.5vw;
-        height: 34vw;
-        background-color: #3A2657;
-        border-radius: 12px;
-        z-index: 10;
-
-        div{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 76%;
-            height: 100%;
-            margin: auto;
-            color: #FFF;
-
-            p{
-                font-size: max(1.3vw, 5px);
-            }
-
-            > * {
-                &:nth-child(1) {
-                    font-size: 3vw;
-                    margin-bottom: 5%;
-                }
-
-                &:nth-child(2) {
-                    margin-bottom: 5%;
-                }
-            }
-        }
-    }
-
     .noteContainer{
-        width: 44.5vw;
+        width: 100vw;
         border-radius: 12px;
     }
 
@@ -59,26 +25,6 @@ const Container = styled.div`
     @media (max-width: 768px) {
         flex-direction: column;
         align-items: center;
-
-        .TextContainer{
-            width: 95%;
-            margin-bottom: 5%;
-            height: 100%;
-            padding: 10px;
-
-            div{
-                
-                p{
-                    font-size: max(4vw, 5px);
-                }
-
-                > * {
-                    &:nth-child(1) {
-                        font-size: 5vw;
-                    }
-                }
-            }
-        }
         
         .noteContainer{
             width: 95%;

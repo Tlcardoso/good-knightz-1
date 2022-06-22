@@ -4,7 +4,7 @@ import Slideshow from '../../../Slideshow.js'
 import Stardust2SVG from '../../../SVGs/ProtectDiscordSections/Stardust2SVG'
 import { Container } from './styles'
 
-const AntiLink = () => {
+const AntiLink = ({indice}) => {
 
   const [scale, setScale] = useState(1)
 
@@ -18,19 +18,8 @@ const AntiLink = () => {
 
   return (
     <Container>
-        <div className='TextContainer'>
-            <div>
-                <h1>Anti link technology </h1>
-                <p>The Good Knight is a Discord Security Bot specifically developed for protecting Web3 communities.</p>
-                <p>The bot’s innovative anti-link technology shields projects by automatically deleting any link that your
-                    server hasn't registered with the Good Knight! Even if a mod's account is compromised, attackers can't post 
-                    their scam links without the mod's Good Knight password. 
-                </p>
-            </div>
-        </div>
-
         <div className='noteContainer'>
-          <Slideshow/>
+          <Slideshow indice={indice}/>
         </div>
 
         <div className='StardustContainer'>
