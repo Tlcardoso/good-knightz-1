@@ -63,10 +63,15 @@ const Container = styled.div`
                     height: 60px;
                     border-radius: 12px;
                     margin-right: 10%;
-                    font-weight: 500;
-                    font-size: 24px;
+                    font-size: max(1.5vw, 12px);
+                    line-height: 100%;
+                    font-weight: 600;
                     padding: 5px 0 5px 0;
                     color: black;
+
+                    &:hover {
+                        background-color: #f3f6f4;
+                    }
                 }
             }
         }

@@ -9,6 +9,11 @@ const Container = styled.div`
     margin-top: 5%;
     position: relative;
 
+    h1 {
+        font-size: 35px;
+        color: white;
+    }
+
     .knightzWrapper {
         display: flex;
         justify-content: space-between;

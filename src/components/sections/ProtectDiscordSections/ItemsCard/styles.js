@@ -8,6 +8,13 @@ const Container = styled.section`
     position: relative;
     z-index: 5;
 
+    > * {
+        &:nth-child(1) {
+            position: relative;
+            z-index: 3;
+        }
+    }
+
     .TextContainer{
         margin-left: 5%;
     }
@@ -36,7 +43,7 @@ const Container = styled.section`
         position: absolute;
         top: -70px;
         right: -60px;
-        z-index: 1;
+        z-index: 2;
 
         > * {
             &:nth-child(2) {
@@ -55,14 +62,14 @@ const Container = styled.section`
     }
 
     h1{
-        font-size: 3vw;
+        font-size: 35px;
         margin-bottom: 20px;
         margin-top: 70px;
         width: auto;
     }
 
     h2{
-        font-size: 2vw;
+        font-size: 20px;
         margin-bottom: 20px;
     }
 
@@ -81,12 +88,12 @@ const Container = styled.section`
         }
 
         h1{
-            font-size: 7vw;
+            font-size: 35px;
             margin-top: 30px;
         }
 
         h2{
-            font-size: 4vw;
+            font-size: 20px;
         }
 
         .GMContainer{

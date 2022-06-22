@@ -4,7 +4,7 @@ const KnightzCard = ({ name, nickName, avatar, children, link }) => {
 
   return (
     <Container>
-      <img src={`svg/${avatar}.svg`} alt={`${name}'s avatar`}/>
+      <img src={`svg/${avatar}.svg`} alt={`${name}'s avatar`} draggable="false"/>
       <h3 className='name'>{name}</h3>
       <a href={link} className='nickName'>
        {nickName}
