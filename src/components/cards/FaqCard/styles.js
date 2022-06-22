@@ -27,7 +27,7 @@ export const Container = styled.div`
     border-radius: 50%;
     background: var(--green);
     position: absolute;
-    top: 30px;
+    top: 21px;
     right: 20px;
     transition: all 0.3s ease;
     transform: rotate(${props => props.isOpen ? '135deg' : '0deg'});
